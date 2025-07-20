@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Get the current brightness percentage from brightnessctl -m output
+get_brightness() {
+  brightnessctl -m | awk -F, '{gsub(/%/,"",$4); print $4}'
+}
+
+case "$1" in
+up)
+  brightnessctl set 5%+ >/dev/null
+  brightness=$(get_brightness)
+  dunstify -a "Backlight" -r 9994 -h int:value:"$brightness" -i "brightness" "Brightness" "Currently at $brightness%" -t 1000
+  ;;
+down)
+  brightnessctl set 5%- >/dev/null
+  brightness=$(get_brightness)
+  dunstify -a "Backlight" -r 9994 -h int:value:"$brightness" -i "brightness" "Brightness" "Currently at $brightness%" -t 1000
+  ;;
+*)
+  echo "Usage: $0 {up|down}"
+  exit 1
+  ;;
+esac

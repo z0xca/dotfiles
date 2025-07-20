@@ -1,0 +1,26 @@
+format = """
+[](fg:color5)\
+$directory\
+$git_branch\
+$git_status\
+[ ](fg:color5)\
+"""
+
+palette = "grayscale-dark"
+
+[directory]
+style = "bg:color5 fg:color0"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+format = '[[ $symbol $branch ](bg:color5 fg:color0)]($style)'
+
+[git_status]
+format = '[[($all_status$ahead_behind )](bg:color5 fg:color0)]($style)'
+
+[palettes.grayscale-dark]
+color0 = "#CCCCCC"
+color5 = "#474747"

@@ -1,0 +1,14 @@
+/* navbar icons */
+.titlebar-buttonbox-container,
+#zen-appcontent-navbar-container,
+#back-button,
+#forward-button,
+#reload-button,
+#home-button {
+  display: none !important;
+}
+
+/* settings sidebar width */
+.navigation {
+  width: 20rem !important;
+}

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CHOSEN=$(printf "Lock\nSuspend\nReboot\nShutdown\nLog Out" | tofi --config "$XDG_CONFIG_HOME"/tofi/config)
+
+case "$CHOSEN" in
+	"Lock") hyprlock ;;
+	"Suspend") loginctl suspend ;;
+	"Reboot") loginctl reboot ;;
+	"Shutdown") loginctl poweroff ;;
+	"Log Out") hyprctl dispatch exit ;;
+	*) exit 1 ;;
+esac

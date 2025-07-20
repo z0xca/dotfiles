@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Check if wl-screenrec is running and stop it if it is
+pgrep -x "wl-screenrec" && pkill -INT -x wl-screenrec && notify-send -h string:wl-screenrec:record -t 1000 "Finished Recording" && exit 0
+
+area=$(slurp)
+
+for i in 3 2 1; do
+  notify-send -t 1000 "Recording starts in $i..."
+  sleep 1
+done
+
+# Start recording
+dateTime=$(date +%Y-%m-%dT%H:%M:%S)
+wl-screenrec --codec av1 --low-power=off -g "$area" -f $HOME/$dateTime.mp4
