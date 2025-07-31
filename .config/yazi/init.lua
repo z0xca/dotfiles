@@ -17,3 +17,9 @@ end, 500, Status.RIGHT)
 require("session"):setup({
 	sync_yanked = true,
 })
+
+function Status:perm()
+	local hovered = self._current.hovered
+	local mode = hovered and hovered.cha.mode
+	return mode and string.format("%o", mode):sub(-3) or ""
+end

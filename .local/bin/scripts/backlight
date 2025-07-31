@@ -7,12 +7,12 @@ get_brightness() {
 
 case "$1" in
 up)
-  brightnessctl set 5%+ >/dev/null
+  brightnessctl set 2%+ >/dev/null
   brightness=$(get_brightness)
   dunstify -a "Backlight" -r 9994 -h int:value:"$brightness" -i "brightness" "Brightness" "Currently at $brightness%" -t 1000
   ;;
 down)
-  brightnessctl set 5%- >/dev/null
+  brightnessctl set 2%- >/dev/null
   brightness=$(get_brightness)
   dunstify -a "Backlight" -r 9994 -h int:value:"$brightness" -i "brightness" "Brightness" "Currently at $brightness%" -t 1000
   ;;
