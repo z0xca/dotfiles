@@ -9,6 +9,16 @@
 }
 
 /* settings sidebar width */
-.navigation {
-  width: 20rem !important;
+#categories {
+	width: 14rem !important;
+}
+
+/* disable webview rounded corners and margins */
+:root {
+  --zen-element-separation: 0px !important;
+  --zen-webview-border-radius: 0;
+  #tabbrowser-tabpanels:not([zen-split-view="true"]) {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }

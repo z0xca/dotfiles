@@ -14,6 +14,8 @@ config.window_background_opacity = 0.8
 config.default_cursor_style = "BlinkingBar"
 config.hide_mouse_cursor_when_typing = true
 
+--config.enable_wayland = false
+
 -- Font settings
 config.font = wezterm.font_with_fallback({
 	"SF Mono",
