@@ -1,5 +1,19 @@
 <h1 align="center">z0xca/dotfiles</h1>
 
+## Gallery
+
+![](.forgejo/1.png)
+![](.forgejo/2.png)
+![](.forgejo/3.png)
+![](.forgejo/4.png)
+
+- P.1: fastfetch, cmatrix, dunst
+- P.2: neovim w/[LazyVim](https://github.com/LazyVim/LazyVim), bottom
+- P.3: yazi, zen
+- P.4: tofi
+
+# Software
+
 - Distro: [Arch Linux](https://archlinux.org)
 - WM: [Hyprland](https://github.com/hyprwm/Hyprland)
 - Panel: [Waybar](https://github.com/Alexays/Waybar)
@@ -23,20 +37,6 @@
 - Cursor: [Posy's Cursor Mono Black](https://github.com/simtrami/posy-improved-cursor-linux)
 - GTK theme: [Orchis Light](https://github.com/vinceliuice/Orchis-theme)
 - Global theme palette: [e-ink-colorscheme](https://github.com/e-ink-colorscheme)
-  
-
-## Screenshots
-
-![](.forgejo/1.png)
-![](.forgejo/2.png)
-![](.forgejo/3.png)
-![](.forgejo/4.png)
-
-P.1: fastfetch, cmatrix, dunst
-P.2: neovim w/[LazyVim](https://github.com/LazyVim/LazyVim), bottom
-P.3: yazi, zen
-P.4: tofi
-
 
 # Inspiration
 
