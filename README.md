@@ -7,10 +7,10 @@
 ![](.forgejo/3.png)
 ![](.forgejo/4.png)
 
-- P.1: fastfetch, cmatrix, dunst
-- P.2: neovim w/[LazyVim](https://github.com/LazyVim/LazyVim), bottom
-- P.3: yazi, zen
-- P.4: tofi
+- P.1: [fastfetch](https://github.com/fastfetch-cli/fastfetch), [cmatrix](https://github.com/abishekvashok/cmatrix), [dunst](https://github.com/dunst-project/dunst)
+- P.2: [neovim](https://github.com/neovim/neovim) with [LazyVim](https://github.com/LazyVim/LazyVim), [bottom](https://github.com/ClementTsang/bottom)
+- P.3: [yazi](https://github.com/sxyazi/yazi), [zen](https://github.com/zen-browser/desktop)
+- P.4: [tofi](https://github.com/philj56/tofi)
 
 # Software
 
