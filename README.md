@@ -12,7 +12,7 @@
 - P.3: [yazi](https://github.com/sxyazi/yazi), [zen](https://github.com/zen-browser/desktop)
 - P.4: [tofi](https://github.com/philj56/tofi)
 
-# Software
+## Software
 
 - Distro: [Arch Linux](https://archlinux.org)
 - WM: [Hyprland](https://github.com/hyprwm/Hyprland)
