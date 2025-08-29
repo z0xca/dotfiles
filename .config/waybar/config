@@ -1,0 +1,103 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "margin-top": 4,
+    "margin-left": 4,
+    "margin-right": 4,
+    "modules-left": [
+      "hyprland/workspaces"
+    ],
+    "modules-center": [
+      "hyprland/window"
+    ],
+    "modules-right": [
+      "pulseaudio",
+      "backlight",
+      "power-profiles-daemon",
+      "battery",
+      "bluetooth",
+      "network#wlan0",
+      "network#eth0",
+      "clock"
+    ],
+    "hyprland/window": {
+      "separate-outputs": true,
+      "tooltip": false
+    },
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": true,
+      "on-click": "activate",
+      "format": "{icon}",
+      "format-icons": {
+        "active": "",
+        "default": ""
+      },
+      "persistent-workspaces": {
+        "*": [ 1, 2, 3, 4 ]
+      }
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": " ",
+        "format-icons": {
+            "headphone": "",
+            "default": ["   ", "  ", " "]
+        },
+        "tooltip-format": "{volume}%",
+        "on-click": "pavucontrol"
+    },
+    "backlight": {
+        "format": "{icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "tooltip-format": "{percent}%",
+        "on-click": "hyprsunset-toggle"
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip": true,
+      "tooltip-format": "Power profile: {profile}",
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+    "battery": {
+      "states": {
+        "warning": 15,
+        "critical": 5
+      },
+      "format": "",
+      "format-discharging": "{icon}",
+      "format-icons": ["", "", "", "", ""],
+      "tooltip-format": "{capacity}% | {timeTo}"
+    },
+    "bluetooth": {
+    	"format": "󰂯",
+    	"format-disabled": "󰂲",
+    	"format-connected": "󰂱",
+    	"tooltip-format-connected": "{device_alias} {device_battery_percentage}%",
+      "on-click": "bzmenu -l custom --launcher-command 'tofi'"
+    },
+    "network#wlan0": {
+      "interface": "wlan0",
+      "format": "{icon}",
+      "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+      "format-disconnected": "󰤭",
+      "tooltip-format": "{essid} | {signalStrength}%",
+      "on-click": "iwmenu -l custom --launcher-command 'tofi'"
+    },
+    "network#eth0": {
+      "interface": "eth0",
+      "format": "󰈀",
+      "format-disconnected": "",
+      "on-click": "iwmenu -l custom --launcher-command 'tofi'"
+    },
+    "clock": {
+      "format": "{:%H:%M}",
+      "tooltip-format": "{:%A, %B %d, %Y}",
+    }
+}
