@@ -17,8 +17,7 @@
       "power-profiles-daemon",
       "battery",
       "bluetooth",
-      "network#wlan0",
-      "network#eth0",
+      "network",
       "clock"
     ],
     "hyprland/window": {
@@ -82,18 +81,13 @@
     	"tooltip-format-connected": "{device_alias} {device_battery_percentage}%",
       "on-click": "bzmenu -l custom --launcher-command 'tofi'"
     },
-    "network#wlan0": {
-      "interface": "wlan0",
+    "network": {
       "format": "{icon}",
       "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
       "format-disconnected": "󰤭",
-      "tooltip-format": "{essid} | {signalStrength}%",
-      "on-click": "iwmenu -l custom --launcher-command 'tofi'"
-    },
-    "network#eth0": {
-      "interface": "eth0",
-      "format": "󰈀",
-      "format-disconnected": "",
+      "format-ethernet": "",
+      "tooltip-format-wifi": "{essid} | {signalStrength}%",
+      "tooltip-format-ethernet": "{ifname}",
       "on-click": "iwmenu -l custom --launcher-command 'tofi'"
     },
     "clock": {

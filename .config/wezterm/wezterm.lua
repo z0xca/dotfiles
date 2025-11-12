@@ -14,11 +14,12 @@ config.window_background_opacity = 0.8
 config.default_cursor_style = "BlinkingBar"
 config.hide_mouse_cursor_when_typing = true
 
---config.enable_wayland = false
+config.enable_wayland = true
 
 -- Font settings
 config.font = wezterm.font_with_fallback({
 	"SF Mono",
+	"Symbols Nerd Font Mono",
 })
 config.font_size = 12
 
@@ -39,6 +40,7 @@ config.keys = {
 }
 
 -- E-Ink color scheme
+-- https://github.com/e-ink-colorscheme
 config.color_schemes = {
 	["E-Ink"] = {
 		foreground = "#474747",

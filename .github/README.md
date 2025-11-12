@@ -2,10 +2,10 @@
 
 ## Gallery
 
-![](.forgejo/1.png)
-![](.forgejo/2.png)
-![](.forgejo/3.png)
-![](.forgejo/4.png)
+![](/.github/screenshots/1.png)
+![](/.github/screenshots/2.png)
+![](/.github/screenshots/3.png)
+![](/.github/screenshots/4.png)
 
 - P.1: [fastfetch](https://github.com/fastfetch-cli/fastfetch), [cmatrix](https://github.com/abishekvashok/cmatrix), [dunst](https://github.com/dunst-project/dunst)
 - P.2: [neovim](https://github.com/neovim/neovim) with [LazyVim](https://github.com/LazyVim/LazyVim), [bottom](https://github.com/ClementTsang/bottom)
@@ -23,10 +23,11 @@
 - File Manager: [yazi](https://github.com/sxyazi/yazi)
 - Notifications: [dunst](https://github.com/dunst-project/dunst)
 - Image Viewer: [imv](https://sr.ht/~exec64/imv/)
-- Video Player: [clapper](https://github.com/Rafostar/clapper)
+- Wallpapers: [hyprpaper](https://github.com/hyprwm/hyprpaper)
 - Lockscreen: [hyprlock](https://github.com/hyprwm/hyprlock)
 - Idle daemon: [hypridle](https://github.com/hyprwm/hypridle)
-- System Monitor: [Bottom](https://github.com/ClementTsang/bottom)
+- Screenshots: [hyprshot-gui](https://github.com/s-adi-dev/hyprshot-gui)
+- System Monitor: [bottom](https://github.com/ClementTsang/bottom)
 - Wi-Fi manager: [iwmenu](https://github.com/e-tho/iwmenu)
 - Bluetooth manager: [bzmenu](https://github.com/e-tho/bzmenu)
 - Volume Control: [pavucontrol](https://github.com/pulseaudio/pavucontrol)
