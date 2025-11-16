@@ -45,7 +45,7 @@
             "default": ["   ", "  ", " "]
         },
         "tooltip-format": "{volume}%",
-        "on-click": "pavucontrol"
+        "on-click": "$TERMINAL start -e wiremix"
     },
     "backlight": {
         "format": "{icon}",
