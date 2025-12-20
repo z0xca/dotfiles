@@ -30,7 +30,6 @@ config.keys = {
 	{ key = "c", mods = "CTRL|SHIFT", action = wezterm.action.SendString("\x03") },
 	{ key = "t", mods = "CTRL", action = wezterm.action.SpawnTab("DefaultDomain") },
 	{ key = "w", mods = "CTRL", action = wezterm.action.CloseCurrentTab({ confirm = false }) },
-	{ key = "q", mods = "CTRL", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
 	{ key = "k", mods = "ALT", action = wezterm.action.ScrollByLine(-1) },
 	{ key = "j", mods = "ALT", action = wezterm.action.ScrollByLine(1) },
 	{ key = "1", mods = "ALT", action = wezterm.action.ActivateTab(0) },

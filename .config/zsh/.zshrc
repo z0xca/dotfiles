@@ -3,7 +3,7 @@ SAVEHIST=2000
 HIST_STAMPS="yyyy-mm-dd"
 
 alias sudo='env PATH="${PATH}" doas'
-alias npm='env PATH="${PATH}" bun'
+#alias npm='env PATH="${PATH}" bun'
 
 eval "$(starship init zsh)"
 

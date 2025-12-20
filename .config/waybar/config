@@ -12,6 +12,7 @@
       "hyprland/window"
     ],
     "modules-right": [
+      "tray",
       "pulseaudio",
       "backlight",
       "power-profiles-daemon",
@@ -36,6 +37,10 @@
       "persistent-workspaces": {
         "*": [ 1, 2, 3, 4 ]
       }
+    },
+    "tray": {
+      "icon-size": 21,
+      "spacing": 10
     },
     "pulseaudio": {
         "format": "{icon}",
