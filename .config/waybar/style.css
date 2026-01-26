@@ -1,0 +1,51 @@
+@import "colors.css";
+* {
+  font-family: "SF Mono", "Symbols Nerd Font";
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  text-shadow: none;
+  background: none;
+}
+window#waybar {
+  background-color: alpha(@surface, 0.8);
+  color: @on_surface;
+}
+
+.modules-left,
+.modules-right,
+.modules-center {
+  margin: 0 4px;
+}
+
+#workspaces button {
+  color: @on_surface;
+}
+
+#workspaces button {
+  margin: 0 6px;
+  padding: 0;
+}
+
+#pulseaudio,
+#backlight,
+#power-profiles-daemon,
+#battery,
+#bluetooth,
+#network,
+#clock {
+  margin: 0 4px;
+}
+
+tooltip {
+  background-color: alpha(@surface, 0.8);
+}
+tooltip label {
+  color: @on_surface;
+}
+
+#language {
+    padding-bottom: 2px;
+}

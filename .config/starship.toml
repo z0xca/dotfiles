@@ -1,0 +1,20 @@
+format = '$directory$git_branch'
+
+palette = 'colors'
+
+[palettes.colors]
+color1 = '#b9c3ff'
+color2 = '#212c61'
+color3 = '#c6c5d0'
+color4 = '#1f1f25'
+color5 = '#212c61'
+color6 = '#121318'
+color7 = '#121318'
+color8 = '#b9c3ff'
+color9 = '#e5bad8'
+
+[directory]
+format = "[](fg:color4)(fg:color1 bg:color4)[$path](fg:color3 bg:color4)[ ](fg:color4)"
+
+[git_branch]
+format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $branch](fg:color3 bg:color4)[](fg:color4) "

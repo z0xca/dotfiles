@@ -1,0 +1,20 @@
+#!/bin/bash
+
+EXPORT_DIR="$XDG_DATA_HOME/packages-history"
+
+CURRENT_DATE=$(date +"%Y-%m-%d")
+
+# Create the export directory if it doesn't exist
+mkdir -p "$EXPORT_DIR"
+
+# Export pacman -Qq result (all installed packages)
+pacman -Qq >"$EXPORT_DIR/pacman_all_$CURRENT_DATE.txt"
+
+# Export pacman -Qeq result (explicitly installed packages)
+pacman -Qeq >"$EXPORT_DIR/pacman_explicit_$CURRENT_DATE.txt"
+
+# Export AUR packages
+pacman -Qqm >"$EXPORT_DIR/pacman_aur_$CURRENT_DATE.txt"
+
+# Remove files older than 7 days
+find "$EXPORT_DIR" -name "pacman_*.txt" -type f -mtime +7 -delete

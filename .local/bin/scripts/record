@@ -1,0 +1,11 @@
+#!/bin/bash
+
+pgrep -x "wl-screenrec" && pkill -INT -x wl-screenrec && notify-send -h string:wl-screenrec:record -t 1000 "Finished Recording" && exit 0
+
+for i in 3 2 1; do
+  notify-send -t 1000 "Recording starts in $i..."
+  sleep 1
+done
+
+dateTime=$(date +%Y-%m-%dT%H:%M:%S)
+LIBVA_DRIVER_NAME=radeonsi wl-screenrec --codec av1 --low-power=off -f $HOME/$dateTime.mp4

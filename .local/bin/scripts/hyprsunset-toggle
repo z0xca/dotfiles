@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if pgrep -x hyprsunset >/dev/null; then
+  pkill -x hyprsunset
+  notify-send -u normal -t 3000 "Night light disabled"
+else
+  hyprsunset &
+  notify-send -u normal -t 3000 "Night light enabled"
+fi

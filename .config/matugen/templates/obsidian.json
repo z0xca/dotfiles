@@ -1,0 +1,27 @@
+{
+  "minimal-style@@base@@dark": "{{colors.surface.default.hex}}",
+  "minimal-style@@bg1@@dark": "{{colors.surface.default.hex}}",
+  "minimal-style@@bg2@@dark": "{{colors.surface_container_lowest.default.hex}}",
+  "minimal-style@@bg3@@dark": "{{colors.surface_container_low.default.hex}}",
+  "minimal-style@@ui1@@dark": "{{colors.surface_container.default.hex}}",
+  "minimal-style@@ui2@@dark": "{{colors.surface_variant.default.hex}}",
+  "minimal-style@@ui3@@dark": "{{colors.secondary_container.default.hex}}",
+  "minimal-style@@ax1@@dark": "{{colors.primary.default.hex}}",
+  "minimal-style@@ax2@@dark": "{{colors.secondary_container.default.hex}}",
+  "minimal-style@@ax3@@dark": "{{colors.secondary_container.default.hex}}",
+  "minimal-style@@sp1@@dark": "{{colors.on_surface.default.hex}}",
+  "minimal-style@@tx1@@dark": "{{colors.on_surface.default.hex}}",
+
+  "minimal-style@@base@@light": "{{colors.surface.light.hex}}",
+  "minimal-style@@bg1@@light": "{{colors.surface.light.hex}}",
+  "minimal-style@@bg2@@light": "{{colors.surface_container.light.hex}}",
+  "minimal-style@@bg3@@light": "{{colors.surface_container_highest.light.hex}}",
+  "minimal-style@@ui1@@light": "{{colors.surface_container.light.hex}}",
+  "minimal-style@@ui2@@light": "{{colors.surface_variant.light.hex}}",
+  "minimal-style@@ui3@@light": "{{colors.secondary_container.light.hex}}",
+  "minimal-style@@ax1@@light": "{{colors.primary.light.hex}}",
+  "minimal-style@@ax2@@light": "{{colors.secondary_container.light.hex}}",
+  "minimal-style@@ax3@@light": "{{colors.secondary_container.light.hex}}",
+  "minimal-style@@sp1@@light": "{{colors.on_surface.light.hex}}",
+  "minimal-style@@tx1@@light": "{{colors.on_surface.light.hex}}"
+}

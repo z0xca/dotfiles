@@ -1,0 +1,46 @@
+[colors]
+background = "{{colors.surface.default.hex}}"
+foreground = "{{colors.on_surface.default.hex}}"
+
+cursor_bg = "{{colors.on_surface.default.hex}}"
+cursor_fg = "{{colors.surface.default.hex}}"
+
+selection_fg = "{{colors.on_secondary.default.hex}}"
+selection_bg = "{{colors.secondary_fixed_dim.default.hex}}"
+
+ansi = [
+    "{{colors.surface.default.hex}}",
+    "{{colors.error.default.hex}}",
+    "{{colors.tertiary.default.hex}}",
+    "{{colors.secondary.default.hex}}",
+    "{{colors.primary.default.hex}}",
+    "{{colors.tertiary_fixed_dim.default.hex}}",
+    "{{colors.secondary_fixed_dim.default.hex}}",
+    "{{colors.on_surface.default.hex}}",
+]
+
+brights = [
+    "{{colors.outline.default.hex}}",
+    "{{colors.error.default.hex}}",
+    "{{colors.tertiary.default.hex}}",
+    "{{colors.secondary.default.hex}}",
+    "{{colors.primary.default.hex}}",
+    "{{colors.tertiary_fixed_dim.default.hex}}",
+    "{{colors.secondary_fixed_dim.default.hex}}",
+    "{{colors.on_surface.default.hex}}",
+]
+
+[colors.tab_bar]
+background = "{{colors.surface_container.default.hex}}"
+
+[colors.tab_bar.active_tab]
+bg_color = "{{colors.surface.default.hex}}"
+fg_color = "{{colors.on_surface.default.hex}}"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "{{colors.surface_container.default.hex}}"
+fg_color = "{{colors.on_surface_variant.default.hex}}"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "{{colors.surface_container_highest.default.hex}}"
+fg_color = "{{colors.on_surface.default.hex}}"

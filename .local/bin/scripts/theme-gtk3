@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Parse command-line arguments
+while getopts "m:" opt; do
+  case $opt in
+  m)
+    MODE=$OPTARG
+    ;;
+  *)
+    echo "Usage: $0 -m [light|dark]"
+    exit 1
+    ;;
+  esac
+done
+
+# Check if mode was provided
+if [ -z "$MODE" ]; then
+  echo "Error: Missing -m argument."
+  echo "Usage: $0 -m [light|dark]"
+  exit 1
+fi
+
+# Apply settings based on mode
+if [ "$MODE" = "dark" ]; then
+  gsettings set org.gnome.desktop.interface gtk-theme "Orchis-Dark"
+  ICON_THEME="breeze-dark"
+  THEME_NAME="Orchis-Dark"
+elif [ "$MODE" = "light" ]; then
+  gsettings set org.gnome.desktop.interface gtk-theme "Orchis-Light"
+  ICON_THEME="breeze-light"
+  THEME_NAME="Orchis-Light"
+else
+  echo "Error: Invalid mode '$MODE'. Please use 'light' or 'dark'."
+  exit 1
+fi
+
+# Update GTK settings file
+SETTINGS_FILE="$HOME/.config/gtk-3.0/settings.ini"
+
+if [ -f "$SETTINGS_FILE" ]; then
+  sed -i "s/^gtk-theme-name=.*/gtk-theme-name=$THEME_NAME/" "$SETTINGS_FILE"
+  sed -i "s/^gtk-icon-theme-name=.*/gtk-icon-theme-name=$ICON_THEME/" "$SETTINGS_FILE"
+fi

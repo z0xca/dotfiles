@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Get the current brightness percentage from brightnessctl -m output
+get_brightness() {
+  brightnessctl -m | awk -F, '{gsub(/%/,"",$4); print $4}'
+}
+
+case "$1" in
+up)
+  brightnessctl set 2%+ >/dev/null
+  ;;
+down)
+  brightnessctl set 2%- >/dev/null
+  ;;
+*)
+  echo "Usage: $0 {up|down}"
+  exit 1
+  ;;
+esac
+
+brightness=$(get_brightness)
+notify-send -a "Backlight" -i brightness -u normal -h int:value:"$brightness" \
+  "Brightness" "Currently at $brightness%"
