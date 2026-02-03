@@ -1,5 +1,5 @@
 /**
- * @name midnight
+ * @name midnight (background)
  * @description a dark, customizable discord theme.
  * @author refact0r
  * @version 2.1.1
@@ -16,7 +16,7 @@
 body {
     /* font options */
     --font: 'SF Pro Text'; /* change to '' for default discord font */
-    --code-font: ''; /* change to '' for default discord font */
+    --code-font: 'Monaspace Neon'; /* change to '' for default discord font */
     font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
 
     /* sizes */
@@ -59,13 +59,13 @@ body {
     /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
     --transparency-tweaks: on; /* off: no changes, on: remove some elements for better transparency */
     --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
-    --panel-blur: off; /* off: no changes, on: blur the background of panels */
+    --panel-blur: on; /* off: no changes, on: blur the background of panels */
     --blur-amount: 12px; /* amount of blur */
-    --bg-floating: var(--bg-3); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
+    --bg-floating: hsla(220, 15%, 13%, 0.9); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
 
     /* chatbar options */
-    --custom-chatbar: off; /* off: default chatbar, separated: chatbar separated from chat */
-    --chatbar-height: 47px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
+    --custom-chatbar: separated; /* off: default chatbar, separated: chatbar separated from chat */
+    --chatbar-height: 56px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
 
     /* other options */
     --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
@@ -76,30 +76,30 @@ body {
     --colors: on; /* off: discord default colors, on: midnight custom colors */
 
     /* text colors */
-    --text-0: var(--bg-4); /* text on colored elements */
-    --text-1: {{colors.primary_fixed.default.hex}}; /* bright text on colored elements */
-    --text-2: {{colors.primary_fixed_dim.default.hex}}; /* headings and important text */
-    --text-3: {{colors.primary.default.hex}}; /* normal text */
-    --text-4: {{colors.primary.default.hex}}; /* icon buttons and channels */
-    --text-5: {{colors.primary_fixed_dim.default.hex}}; /* muted channels/chats and timestamps */
+    --text-0: {{colors.surface.default.hex}};               /* text on colored elements */
+    --text-1: {{colors.on_surface.default.hex}};            /* other normally white text */
+    --text-2: {{colors.on_surface.default.hex}};            /* headings and important text */
+    --text-3: {{colors.on_surface_variant.default.hex}};    /* normal text */
+    --text-4: {{colors.on_surface_variant.default.hex}};    /* icon buttons and channels */
+    --text-5: {{colors.outline.default.hex}};               /* muted channels/chats and timestamps */
 
     /* background and dark colors */
-    --bg-1: {{colors.surface_container_low.default.hex}}; /* dark buttons when clicked */
-    --bg-2: {{colors.surface_container_low.default.hex}}; /* dark buttons */
-    --bg-3: rgba(from {{colors.surface.default.hex}} r g b / 0.8);; /* spacing, secondary elements */
-    /* --bg-3: {{colors.surface_container.default.hex}}; spacing, secondary elements */
-    --bg-4: {{colors.surface_container_lowest.default.hex}}; /* main background color */
-    --hover: hsla(20, 3%, 40%, 0.1); /* channels and buttons when hovered */
-    --active: hsla(20, 3%, 40%, 0.2); /* channels and buttons when clicked or selected */
-    --active-2: hsla(20, 3%, 40%, 0.3); /* extra state for transparent buttons */
-    --message-hover: hsla(0, 0%, 0%, 0.1); /* messages when hovered */
+    rgba(from  r g b / 0.6);
+    --bg-1: rgba(from {{colors.surface_variant.default.hex}} r g b / 0.6); /* dark buttons when clicked */
+    --bg-2: rgba(from {{colors.surface_container_high.default.hex}} r g b / 0.6); /* dark buttons */
+    --bg-3: rgba(from {{colors.surface_container_low.default.hex}} r g b / 0.8); /* spacing, secondary elements */
+    --bg-4: rgba(from {{colors.surface.default.hex}} r g b / 0.6); /* main background color */
+    --hover: rgba(from {{colors.surface_bright.default.hex}} r g b / 0.1); /* channels and buttons when hovered */
+    --active: rgba(from {{colors.surface_bright.default.hex}} r g b / 0.2); /* channels and buttons when clicked or selected */
+    --active-2: hsla(220, 19%, 40%, 0.3); /* extra state for transparent buttons */
+    --message-hover: rgba(from {{colors.surface_bright.default.hex}} r g b / 0.1); /* messages when hovered */
 
     /* accent colors */
-    --accent-1: var(--blue-1); /* links and other accent text */
-    --accent-2: var(--blue-2); /* small accent elements */
-    --accent-3: var(--blue-3); /* accent buttons */
-    --accent-4: var(--blue-4); /* accent buttons when hovered */
-    --accent-5: var(--blue-5); /* accent buttons when clicked */
+    --accent-1: {{colors.tertiary.default.hex}}; /* links and other accent text */
+    --accent-2: {{colors.primary.default.hex}}; /* small accent elements */
+    --accent-3: {{colors.primary.default.hex}}; /* accent buttons */
+    --accent-4: {{colors.surface_bright.default.hex}}; /* accent buttons when hovered */
+    --accent-5: {{colors.primary_fixed_dim.default.hex}}; /* accent buttons when clicked */
     --accent-new: var(--accent-2); /* stuff that's normally red like mute/deafen buttons */
     --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
     --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
@@ -132,11 +132,11 @@ body {
     --green-4: oklch(60% 0.11 170);
     --green-5: oklch(55% 0.11 160);
 
-    --blue-1: {{colors.primary_container.default.hex}};
-    --blue-2: {{colors.primary_fixed.default.hex}};
-    --blue-3: {{colors.primary_fixed_dim.default.hex}};
-    --blue-4: {{colors.primary.default.hex}};
-    --blue-5: {{colors.on_primary_fixed.default.hex}};
+    --blue-1: oklch(75% 0.1 215);
+    --blue-2: oklch(70% 0.1 215);
+    --blue-3: oklch(65% 0.1 215);
+    --blue-4: oklch(60% 0.1 215);
+    --blue-5: oklch(55% 0.1 215);
 
     --yellow-1: oklch(80% 0.11 90);
     --yellow-2: oklch(75% 0.11 90);
