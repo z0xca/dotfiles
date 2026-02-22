@@ -35,8 +35,3 @@
 - Cursor: [Posy's Cursor Mono Black](https://github.com/simtrami/posy-improved-cursor-linux)
 - GTK theme: [Orchis](https://github.com/vinceliuice/Orchis-theme)
 - Color generation: [matugen](https://github.com/InioX/matugen)
-
-# Inspiration
-
-https://www.reddit.com/r/unixporn/comments/1ivfd53/rectangle_i_really_really_like_eink
-

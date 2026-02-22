@@ -34,11 +34,20 @@
          "preferences": {
             "colorGenTool": "matugen",
             "engine": "hyprpaper",
-            "postCommand": "ln -sf \"$(hyprctl hyprpaper listactive | awk -F '= ' 'NR==1 {gsub(/^ +/,\"\",$2); print $2}')\" /home/odin/.local/share/wallpapers/current",
+            "postCommand": "ln -sf ${wallpaper} /home/odin/.local/share/wallpapers/current",
             "wallpaperPath": "/home/odin/.local/share/wallpapers"
          }
       },
+      "applications": {
+         "preferences": {
+            "paths": [
+               "/home/odin/.local/share/applications",
+               "/usr/share/applications"
+            ]
+         }
+      },
       "core": {
+         "enabled": true,
          "entrypoints": {
             "about": {
                "enabled": false
@@ -47,7 +56,10 @@
                "enabled": false
             },
             "keybind-settings": {
-               "enabled": false
+               "enabled": true
+            },
+            "list-extensions": {
+               "enabled": true
             },
             "manage-fallback": {
                "enabled": false
@@ -61,11 +73,23 @@
             "open-default-config": {
                "enabled": false
             },
-            "refresh-apps": {
+            "prune-memory": {
                "enabled": false
+            },
+            "refresh-apps": {
+               "enabled": true
             },
             "report-bug": {
                "enabled": false
+            },
+            "search-builtin-icons": {
+               "enabled": false
+            },
+            "search-emojis": {
+               "enabled": true
+            },
+            "settings": {
+               "enabled": true
             },
             "sponsor": {
                "enabled": false
