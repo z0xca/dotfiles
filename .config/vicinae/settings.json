@@ -23,6 +23,9 @@
          "name": "matugen"
       }
    },
+   "telemetry": {
+      "system_info": false
+   },
    "launcher_window": {
       "opacity": 0.8,
       "client_side_decorations": {
@@ -44,6 +47,26 @@
                "/home/odin/.local/share/applications",
                "/usr/share/applications"
             ]
+         },
+         "entrypoints": {
+            "jshell-java-openjdk": {
+               "enabled": false
+            }
+         }
+      },
+      "calculator": {
+         "enabled": true,
+         "preferences": {
+            "backend": "qalculate",
+            "refreshRatesOnStartup": true
+         },
+         "entrypoints": {
+            "history": {
+               "enabled": true
+            },
+            "refresh-rates": {
+               "enabled": true
+            }
          }
       },
       "core": {
