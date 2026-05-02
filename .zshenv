@@ -20,6 +20,3 @@ export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE=$XDG_STATE_HOME/zsh_history
 export VSCODE_PORTABLE="$XDG_DATA_HOME"/vscode
-
-export BEMOJI_PICKER_CMD='tofi -c /home/odin/.config/tofi/history-config'
-export BEMOJI_CLIP_CMD="wl-copy"

@@ -7,6 +7,17 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "ui_font_family": "SF Pro Text",
   "buffer_font_weight": 500.0,
   "buffer_font_family": "Monaspace Neon",
@@ -16,6 +27,7 @@
     },
   },
   "collaboration_panel": {
+    "dock": "left",
     "button": false,
   },
   "tab_size": 2,
@@ -41,6 +53,7 @@
     "active_language_button": true,
   },
   "project_panel": {
+    "dock": "left",
     "button": true,
     "file_icons": true,
   },

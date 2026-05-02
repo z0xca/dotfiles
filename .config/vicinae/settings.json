@@ -69,6 +69,14 @@
             }
          }
       },
+      "clipboard": {
+         "preferences": {
+            "monitoring": true,
+            "encryption": false,
+            "eraseOnStartup": false,
+            "ignorePasswords": true
+         }
+      },
       "core": {
          "enabled": true,
          "entrypoints": {
