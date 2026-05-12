@@ -7,16 +7,42 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "language_models": {
+    "ollama": {
+      "api_url": "http://10.0.0.5:11434",
+    },
+  },
+  "show_edit_predictions": false,
+  "edit_predictions": {
+    "provider": "ollama",
+    "ollama": {
+      "model": "gpt-oss:20b",
+      "api_url": "http://10.0.0.5:11434",
+    },
+  },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent": {
+    "default_profile": "ask",
+    "tool_permissions": {
+      "tools": {
+        "fetch": {
+          "default": "allow",
+        },
+      },
+    },
+    "default_model": {
+      "provider": "ollama",
+      "model": "gpt-oss:20b",
+      "enable_thinking": true,
+    },
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "ui_font_family": "SF Pro Text",
   "buffer_font_weight": 500.0,
@@ -62,7 +88,7 @@
     "button": true,
     "font_family": "SF Mono",
   },
-  "disable_ai": true,
+  "disable_ai": false,
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
@@ -76,16 +102,7 @@
     "light": "Matugen Dark",
     "dark": "Matugen Dark",
   },
-  "context_servers": {
-    "shadcn-mcp-server": {
-      "enabled": true,
-      "settings": {},
-    },
-    "Astro docs": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote", "https://mcp.docs.astro.build/mcp"],
-    },
-  },
+  "context_servers": {},
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
@@ -95,5 +112,21 @@
         },
       },
     },
+    "nixd": {
+      "initialization_options": {
+        "formatting": {
+          "command": ["nixfmt"],
+        },
+      },
+    },
   },
+  "languages": {
+    "Nix": {
+      "language_servers": ["nixd", "!nil"],
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+    },
+  },
+  "file_scan_inclusions": ["example"],
 }

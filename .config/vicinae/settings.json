@@ -54,6 +54,9 @@
             }
          }
       },
+      "browser-extension": {
+         "enabled": false
+      },
       "calculator": {
          "enabled": true,
          "preferences": {
