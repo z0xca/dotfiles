@@ -119,17 +119,38 @@
       },
     },
   },
+  "format_on_save": "on",
   "languages": {
     "Nix": {
       "language_servers": ["nixd", "!nil"],
       "tab_size": 2,
       "hard_tabs": false,
-      "format_on_save": "on",
       "formatter": {
         "external": {
           "command": "alejandra",
         },
       },
+    },
+    "Markdown": {
+      "language_servers": ["rumdl"],
+    },
+    "Astro": {
+      "formatter": "prettier",
+    },
+    "JavaScript": {
+      "formatter": "prettier",
+    },
+    "TypeScript": {
+      "formatter": "prettier",
+    },
+    "TSX": {
+      "formatter": "prettier",
+    },
+    "HTML": {
+      "formatter": "prettier",
+    },
+    "JSON": {
+      "formatter": "prettier",
     },
   },
   "file_scan_inclusions": ["example"],
