@@ -94,7 +94,7 @@
     	"format-disabled": "󰂲",
     	"format-connected": "󰂱",
     	"tooltip-format-connected": "{device_alias} {device_battery_percentage}%",
-      "on-click": "vicinae vicinae://extensions/Gelei/bluetooth"
+      "on-click": "vicinae vicinae://launch/@Gelei/store.vicinae.bluetooth"
     },
     "network": {
       "format": "{icon}",

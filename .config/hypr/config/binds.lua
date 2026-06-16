@@ -1,5 +1,10 @@
 -- The binds are in Colemak Mod-DH so don't be surprised
 
+hl.bind("SUPER + Delete", hl.dsp.submap("qemu"))
+hl.define_submap("qemu", function()
+	hl.bind("SUPER + SHIFT + Delete", hl.dsp.submap("reset"))
+end)
+
 hl.bind("SUPER + F", hl.dsp.exec_cmd("wezterm"))
 hl.bind("SUPER + SHIFT + F", hl.dsp.exec_cmd("wezterm", { float = true }))
 

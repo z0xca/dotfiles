@@ -33,8 +33,9 @@
       },
     },
     "default_model": {
-      "provider": "ollama",
-      "model": "gpt-oss:20b",
+      "effort": "high",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
       "enable_thinking": true,
     },
     "dock": "right",
