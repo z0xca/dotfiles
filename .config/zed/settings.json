@@ -33,9 +33,8 @@
       },
     },
     "default_model": {
-      "effort": "high",
-      "provider": "anthropic",
-      "model": "claude-sonnet-4-6",
+      "provider": "ollama",
+      "model": "gpt-oss:20b",
       "enable_thinking": true,
     },
     "dock": "right",

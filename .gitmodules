@@ -1,0 +1,3 @@
+[submodule ".local/share/wallpapers"]
+	path = .local/share/wallpapers
+	url = git@github.com:z0xca/wallpapers.git

@@ -103,7 +103,7 @@
       "format-ethernet": "",
       "tooltip-format-wifi": "{essid} | {signalStrength}%",
       "tooltip-format-ethernet": "{ifname}",
-      "on-click": "vicinae vicinae://extensions/dagimg-dot/wifi-commander"
+      "on-click": "vicinae vicinae://launch/@dagimg-dot/store.vicinae.wifi-commander"
     },
     "clock": {
       "format": "{:%H:%M}",
