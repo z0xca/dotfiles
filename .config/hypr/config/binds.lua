@@ -1,3 +1,13 @@
+-- Disable laptop monitor natively when lid is closed
+hl.bind("switch:on:Lid Switch", function()
+	hl.monitor({ output = "eDP-1", disabled = true })
+end, { locked = true })
+
+-- Re-enable laptop monitor natively when lid is opened
+hl.bind("switch:off:Lid Switch", function()
+	hl.monitor({ output = "eDP-1", disabled = false })
+end, { locked = true })
+
 -- The binds are in Colemak Mod-DH so don't be surprised
 
 hl.bind("SUPER + Delete", hl.dsp.submap("qemu"))
